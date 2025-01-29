@@ -131,17 +131,7 @@ Performance on Office-31 dataset (Accuracy %):
 |--------|-------|-------|-------|-------|-------|-------|-----|
 | CFSAM-InterBN | 95.2 | 75.6 | 96.1 | 74.8 | 99.3 | 98.7 | 89.9 |
 
-## Citation
 
-If you find this code useful for your research, please cite our paper:
-```bibtex
-@article{your-paper,
-  title={Your Paper Title},
-  author={Your Name},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
-  year={2024}
-}
-```
 
 ## License
 
@@ -154,15 +144,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-<!-- ## Acknowledgments
-
-- Thanks to the authors of SAM and related works
-- PyTorch team for the excellent deep learning framework
-- Office-31 dataset creators -->
-
-<!-- ## Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/CFSAM-InterBN](https://github.com/yourusername/CFSAM-InterBN) -->
