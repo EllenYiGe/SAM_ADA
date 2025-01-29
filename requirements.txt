@@ -1,0 +1,27 @@
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data Processing & Scientific Computing
+numpy>=1.19.2
+scipy>=1.5.2
+Pillow>=8.0.1
+pandas>=1.5.0
+
+# Machine Learning
+scikit-learn>=0.23.2
+
+# Visualization & Logging
+matplotlib>=3.3.2
+tensorboard>=2.12.0
+wandb>=0.15.0  # Optional: for experiment tracking
+
+# Progress & Utils
+tqdm>=4.50.2
+pyyaml>=6.0.0
+
+# Development Tools
+pytest>=7.0.0  # For testing
+black>=22.0.0  # For code formatting
+isort>=5.10.0  # For import sorting
+flake8>=4.0.0  # For code linting

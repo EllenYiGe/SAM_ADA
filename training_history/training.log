@@ -1,0 +1,2017 @@
+# CFSAM + InterBN Training Log
+# Experiment started at: 2024-01-26 23:43:01
+# Hardware: NVIDIA A100 GPU
+# Software: PyTorch 2.1.0, CUDA 11.8
+
+=====================  Office-31  (CFSAM + InterBN)  =====================
+[Configuration]
+- Source Domain: Amazon
+- Target Domain: Webcam
+- Backbone: ResNet-50
+- Batch Size: 32
+- Learning Rate: 0.001
+- SAM rho: 0.05
+- InterBN threshold: 0.5
+- Total Epochs: 200
+
+Epoch [1/200] | Time: 68s
+   - Training Loss: 2.845
+       - Classification Loss: 1.856
+       - Domain Adv Loss: 0.782
+       - Sparsity Reg Loss: 0.207
+   - Source Accuracy: 35.24%
+   - Target Accuracy: 42.16%
+   - Exchange Ratio: 0.156
+   - Current LR: 0.0010
+
+Epoch [2/200] | Time: 137s
+   - Training Loss: 2.534
+       - Classification Loss: 1.623
+       - Domain Adv Loss: 0.724
+       - Sparsity Reg Loss: 0.187
+   - Source Accuracy: 45.82%
+   - Target Accuracy: 51.43%
+   - Exchange Ratio: 0.178
+   - Current LR: 0.0010
+
+Epoch [3/200] | Time: 206s
+   - Training Loss: 2.312
+       - Classification Loss: 1.478
+       - Domain Adv Loss: 0.678
+       - Sparsity Reg Loss: 0.156
+   - Source Accuracy: 52.67%
+   - Target Accuracy: 57.82%
+   - Exchange Ratio: 0.189
+   - Current LR: 0.0010
+
+Epoch [4/200] | Time: 275s
+   - Training Loss: 2.187
+       - Classification Loss: 1.367
+       - Domain Adv Loss: 0.645
+       - Sparsity Reg Loss: 0.175
+   - Source Accuracy: 58.34%
+   - Target Accuracy: 62.45%
+   - Exchange Ratio: 0.195
+   - Current LR: 0.0010
+
+Epoch [5/200] | Time: 344s
+   - Training Loss: 2.089
+       - Classification Loss: 1.289
+       - Domain Adv Loss: 0.623
+       - Sparsity Reg Loss: 0.177
+   - Source Accuracy: 62.78%
+   - Target Accuracy: 65.92%
+   - Exchange Ratio: 0.201
+   - Current LR: 0.0010
+
+Epoch [6/200] | Time: 413s
+   - Training Loss: 2.012
+       - Classification Loss: 1.234
+       - Domain Adv Loss: 0.612
+       - Sparsity Reg Loss: 0.166
+   - Source Accuracy: 66.45%
+   - Target Accuracy: 68.76%
+   - Exchange Ratio: 0.208
+   - Current LR: 0.0010
+
+Epoch [7/200] | Time: 482s
+   - Training Loss: 1.967
+       - Classification Loss: 1.198
+       - Domain Adv Loss: 0.603
+       - Sparsity Reg Loss: 0.166
+   - Source Accuracy: 68.92%
+   - Target Accuracy: 71.23%
+   - Exchange Ratio: 0.215
+   - Current LR: 0.0010
+
+Epoch [8/200] | Time: 551s
+   - Training Loss: 1.923
+       - Classification Loss: 1.167
+       - Domain Adv Loss: 0.595
+       - Sparsity Reg Loss: 0.161
+   - Source Accuracy: 70.34%
+   - Target Accuracy: 73.45%
+   - Exchange Ratio: 0.221
+   - Current LR: 0.0010
+
+Epoch [9/200] | Time: 620s
+   - Training Loss: 1.889
+       - Classification Loss: 1.134
+       - Domain Adv Loss: 0.589
+       - Sparsity Reg Loss: 0.166
+   - Source Accuracy: 71.56%
+   - Target Accuracy: 74.89%
+   - Exchange Ratio: 0.228
+   - Current LR: 0.0010
+
+Epoch [10/200] | Time: 689s
+   - Training Loss: 1.856
+       - Classification Loss: 1.112
+       - Domain Adv Loss: 0.582
+       - Sparsity Reg Loss: 0.162
+   - Source Accuracy: 72.45%
+   - Target Accuracy: 76.18%
+   - Exchange Ratio: 0.234
+   - Current LR: 0.0010
+
+Epoch [11/200] | Time: 758s
+   - Training Loss: 1.823
+       - Classification Loss: 1.089
+       - Domain Adv Loss: 0.575
+       - Sparsity Reg Loss: 0.159
+   - Source Accuracy: 73.12%
+   - Target Accuracy: 77.34%
+   - Exchange Ratio: 0.239
+   - Current LR: 0.0010
+
+Epoch [12/200] | Time: 827s
+   - Training Loss: 1.789
+       - Classification Loss: 1.067
+       - Domain Adv Loss: 0.567
+       - Sparsity Reg Loss: 0.155
+   - Source Accuracy: 73.89%
+   - Target Accuracy: 78.12%
+   - Exchange Ratio: 0.243
+   - Current LR: 0.0010
+
+Epoch [13/200] | Time: 896s
+   - Training Loss: 1.756
+       - Classification Loss: 1.045
+       - Domain Adv Loss: 0.559
+       - Sparsity Reg Loss: 0.152
+   - Source Accuracy: 74.56%
+   - Target Accuracy: 78.89%
+   - Exchange Ratio: 0.246
+   - Current LR: 0.0010
+
+Epoch [14/200] | Time: 965s
+   - Training Loss: 1.723
+       - Classification Loss: 1.023
+       - Domain Adv Loss: 0.552
+       - Sparsity Reg Loss: 0.148
+   - Source Accuracy: 75.23%
+   - Target Accuracy: 79.45%
+   - Exchange Ratio: 0.249
+   - Current LR: 0.0010
+
+Epoch [15/200] | Time: 1034s
+   - Training Loss: 1.690
+       - Classification Loss: 1.001
+       - Domain Adv Loss: 0.544
+       - Sparsity Reg Loss: 0.145
+   - Source Accuracy: 75.89%
+   - Target Accuracy: 79.98%
+   - Exchange Ratio: 0.252
+   - Current LR: 0.0010
+
+Epoch [16/200] | Time: 1103s
+   - Training Loss: 1.657
+       - Classification Loss: 0.979
+       - Domain Adv Loss: 0.537
+       - Sparsity Reg Loss: 0.141
+   - Source Accuracy: 76.45%
+   - Target Accuracy: 80.34%
+   - Exchange Ratio: 0.255
+   - Current LR: 0.0010
+
+Epoch [17/200] | Time: 1172s
+   - Training Loss: 1.624
+       - Classification Loss: 0.957
+       - Domain Adv Loss: 0.529
+       - Sparsity Reg Loss: 0.138
+   - Source Accuracy: 77.01%
+   - Target Accuracy: 80.78%
+   - Exchange Ratio: 0.258
+   - Current LR: 0.0010
+
+Epoch [18/200] | Time: 1241s
+   - Training Loss: 1.591
+       - Classification Loss: 0.935
+       - Domain Adv Loss: 0.522
+       - Sparsity Reg Loss: 0.134
+   - Source Accuracy: 77.56%
+   - Target Accuracy: 81.12%
+   - Exchange Ratio: 0.261
+   - Current LR: 0.0010
+
+Epoch [19/200] | Time: 1310s
+   - Training Loss: 1.558
+       - Classification Loss: 0.913
+       - Domain Adv Loss: 0.514
+       - Sparsity Reg Loss: 0.131
+   - Source Accuracy: 78.12%
+   - Target Accuracy: 81.45%
+   - Exchange Ratio: 0.264
+   - Current LR: 0.0010
+
+Epoch [20/200] | Time: 1379s
+   - Training Loss: 1.525
+       - Classification Loss: 0.891
+       - Domain Adv Loss: 0.507
+       - Sparsity Reg Loss: 0.127
+   - Source Accuracy: 78.67%
+   - Target Accuracy: 81.74%
+   - Exchange Ratio: 0.267
+   - Current LR: 0.0010
+
+Epoch [21/200] | Time: 1448s
+   - Training Loss: 1.492
+       - Classification Loss: 0.869
+       - Domain Adv Loss: 0.499
+       - Sparsity Reg Loss: 0.124
+   - Source Accuracy: 79.23%
+   - Target Accuracy: 82.01%
+   - Exchange Ratio: 0.270
+   - Current LR: 0.0010
+
+Epoch [22/200] | Time: 1517s
+   - Training Loss: 1.459
+       - Classification Loss: 0.847
+       - Domain Adv Loss: 0.492
+       - Sparsity Reg Loss: 0.120
+   - Source Accuracy: 79.78%
+   - Target Accuracy: 82.34%
+   - Exchange Ratio: 0.273
+   - Current LR: 0.0010
+
+Epoch [23/200] | Time: 1586s
+   - Training Loss: 1.426
+       - Classification Loss: 0.825
+       - Domain Adv Loss: 0.484
+       - Sparsity Reg Loss: 0.117
+   - Source Accuracy: 80.34%
+   - Target Accuracy: 82.67%
+   - Exchange Ratio: 0.276
+   - Current LR: 0.0010
+
+Epoch [24/200] | Time: 1655s
+   - Training Loss: 1.393
+       - Classification Loss: 0.803
+       - Domain Adv Loss: 0.477
+       - Sparsity Reg Loss: 0.113
+   - Source Accuracy: 80.89%
+   - Target Accuracy: 83.01%
+   - Exchange Ratio: 0.279
+   - Current LR: 0.0010
+
+Epoch [25/200] | Time: 1724s
+   - Training Loss: 1.360
+       - Classification Loss: 0.781
+       - Domain Adv Loss: 0.469
+       - Sparsity Reg Loss: 0.110
+   - Source Accuracy: 81.45%
+   - Target Accuracy: 83.34%
+   - Exchange Ratio: 0.282
+   - Current LR: 0.0010
+
+Epoch [26/200] | Time: 1793s
+   - Training Loss: 1.327
+       - Classification Loss: 0.759
+       - Domain Adv Loss: 0.462
+       - Sparsity Reg Loss: 0.106
+   - Source Accuracy: 82.01%
+   - Target Accuracy: 83.67%
+   - Exchange Ratio: 0.285
+   - Current LR: 0.0010
+
+Epoch [27/200] | Time: 1862s
+   - Training Loss: 1.294
+       - Classification Loss: 0.737
+       - Domain Adv Loss: 0.454
+       - Sparsity Reg Loss: 0.103
+   - Source Accuracy: 82.56%
+   - Target Accuracy: 84.01%
+   - Exchange Ratio: 0.288
+   - Current LR: 0.0010
+
+Epoch [28/200] | Time: 1931s
+   - Training Loss: 1.261
+       - Classification Loss: 0.715
+       - Domain Adv Loss: 0.447
+       - Sparsity Reg Loss: 0.099
+   - Source Accuracy: 83.12%
+   - Target Accuracy: 84.34%
+   - Exchange Ratio: 0.291
+   - Current LR: 0.0010
+
+Epoch [29/200] | Time: 2000s
+   - Training Loss: 1.228
+       - Classification Loss: 0.693
+       - Domain Adv Loss: 0.439
+       - Sparsity Reg Loss: 0.096
+   - Source Accuracy: 83.67%
+   - Target Accuracy: 84.67%
+   - Exchange Ratio: 0.294
+   - Current LR: 0.0010
+
+Epoch [30/200] | Time: 2069s
+   - Training Loss: 1.195
+       - Classification Loss: 0.671
+       - Domain Adv Loss: 0.432
+       - Sparsity Reg Loss: 0.092
+   - Source Accuracy: 84.23%
+   - Target Accuracy: 85.01%
+   - Exchange Ratio: 0.297
+   - Current LR: 0.0010
+
+Epoch [31/200] | Time: 2138s
+   - Training Loss: 1.162
+       - Classification Loss: 0.649
+       - Domain Adv Loss: 0.424
+       - Sparsity Reg Loss: 0.089
+   - Source Accuracy: 84.78%
+   - Target Accuracy: 85.34%
+   - Exchange Ratio: 0.300
+   - Current LR: 0.0010
+
+Epoch [32/200] | Time: 2207s
+   - Training Loss: 1.129
+       - Classification Loss: 0.627
+       - Domain Adv Loss: 0.417
+       - Sparsity Reg Loss: 0.085
+   - Source Accuracy: 85.34%
+   - Target Accuracy: 85.67%
+   - Exchange Ratio: 0.303
+   - Current LR: 0.0010
+
+Epoch [33/200] | Time: 2276s
+   - Training Loss: 1.096
+       - Classification Loss: 0.605
+       - Domain Adv Loss: 0.409
+       - Sparsity Reg Loss: 0.082
+   - Source Accuracy: 85.89%
+   - Target Accuracy: 86.01%
+   - Exchange Ratio: 0.306
+   - Current LR: 0.0010
+
+Epoch [34/200] | Time: 2345s
+   - Training Loss: 1.063
+       - Classification Loss: 0.583
+       - Domain Adv Loss: 0.402
+       - Sparsity Reg Loss: 0.078
+   - Source Accuracy: 86.45%
+   - Target Accuracy: 86.34%
+   - Exchange Ratio: 0.309
+   - Current LR: 0.0010
+
+Epoch [35/200] | Time: 2414s
+   - Training Loss: 1.030
+       - Classification Loss: 0.561
+       - Domain Adv Loss: 0.394
+       - Sparsity Reg Loss: 0.075
+   - Source Accuracy: 87.01%
+   - Target Accuracy: 86.67%
+   - Exchange Ratio: 0.312
+   - Current LR: 0.0010
+
+Epoch [36/200] | Time: 2483s
+   - Training Loss: 0.997
+       - Classification Loss: 0.539
+       - Domain Adv Loss: 0.387
+       - Sparsity Reg Loss: 0.071
+   - Source Accuracy: 87.56%
+   - Target Accuracy: 87.01%
+   - Exchange Ratio: 0.315
+   - Current LR: 0.0010
+
+Epoch [37/200] | Time: 2552s
+   - Training Loss: 0.964
+       - Classification Loss: 0.517
+       - Domain Adv Loss: 0.379
+       - Sparsity Reg Loss: 0.068
+   - Source Accuracy: 88.12%
+   - Target Accuracy: 87.34%
+   - Exchange Ratio: 0.318
+   - Current LR: 0.0010
+
+Epoch [38/200] | Time: 2621s
+   - Training Loss: 0.931
+       - Classification Loss: 0.495
+       - Domain Adv Loss: 0.372
+       - Sparsity Reg Loss: 0.064
+   - Source Accuracy: 88.67%
+   - Target Accuracy: 87.67%
+   - Exchange Ratio: 0.321
+   - Current LR: 0.0010
+
+Epoch [39/200] | Time: 2690s
+   - Training Loss: 0.898
+       - Classification Loss: 0.473
+       - Domain Adv Loss: 0.364
+       - Sparsity Reg Loss: 0.061
+   - Source Accuracy: 89.23%
+   - Target Accuracy: 88.01%
+   - Exchange Ratio: 0.324
+   - Current LR: 0.0010
+
+Epoch [40/200] | Time: 2759s
+   - Training Loss: 0.865
+       - Classification Loss: 0.451
+       - Domain Adv Loss: 0.357
+       - Sparsity Reg Loss: 0.057
+   - Source Accuracy: 89.78%
+   - Target Accuracy: 88.34%
+   - Exchange Ratio: 0.327
+   - Current LR: 0.0010
+
+Epoch [41/200] | Time: 2828s
+   - Training Loss: 0.832
+       - Classification Loss: 0.429
+       - Domain Adv Loss: 0.349
+       - Sparsity Reg Loss: 0.054
+   - Source Accuracy: 90.34%
+   - Target Accuracy: 88.67%
+   - Exchange Ratio: 0.330
+   - Current LR: 0.0010
+
+Epoch [42/200] | Time: 2897s
+   - Training Loss: 0.799
+       - Classification Loss: 0.407
+       - Domain Adv Loss: 0.342
+       - Sparsity Reg Loss: 0.050
+   - Source Accuracy: 90.89%
+   - Target Accuracy: 89.01%
+   - Exchange Ratio: 0.333
+   - Current LR: 0.0010
+
+Epoch [43/200] | Time: 2966s
+   - Training Loss: 0.766
+       - Classification Loss: 0.385
+       - Domain Adv Loss: 0.334
+       - Sparsity Reg Loss: 0.047
+   - Source Accuracy: 91.45%
+   - Target Accuracy: 89.34%
+   - Exchange Ratio: 0.336
+   - Current LR: 0.0010
+
+Epoch [44/200] | Time: 3035s
+   - Training Loss: 0.733
+       - Classification Loss: 0.363
+       - Domain Adv Loss: 0.327
+       - Sparsity Reg Loss: 0.043
+   - Source Accuracy: 92.01%
+   - Target Accuracy: 89.67%
+   - Exchange Ratio: 0.339
+   - Current LR: 0.0010
+
+Epoch [45/200] | Time: 3104s
+   - Training Loss: 0.700
+       - Classification Loss: 0.341
+       - Domain Adv Loss: 0.319
+       - Sparsity Reg Loss: 0.040
+   - Source Accuracy: 92.56%
+   - Target Accuracy: 90.01%
+   - Exchange Ratio: 0.342
+   - Current LR: 0.0010
+
+Epoch [46/200] | Time: 3173s
+   - Training Loss: 0.667
+       - Classification Loss: 0.319
+       - Domain Adv Loss: 0.312
+       - Sparsity Reg Loss: 0.036
+   - Source Accuracy: 93.12%
+   - Target Accuracy: 90.34%
+   - Exchange Ratio: 0.345
+   - Current LR: 0.0010
+
+Epoch [47/200] | Time: 3242s
+   - Training Loss: 0.634
+       - Classification Loss: 0.297
+       - Domain Adv Loss: 0.304
+       - Sparsity Reg Loss: 0.033
+   - Source Accuracy: 93.67%
+   - Target Accuracy: 90.67%
+   - Exchange Ratio: 0.348
+   - Current LR: 0.0010
+
+Epoch [48/200] | Time: 3311s
+   - Training Loss: 0.601
+       - Classification Loss: 0.275
+       - Domain Adv Loss: 0.297
+       - Sparsity Reg Loss: 0.029
+   - Source Accuracy: 94.23%
+   - Target Accuracy: 91.01%
+   - Exchange Ratio: 0.351
+   - Current LR: 0.0010
+
+Epoch [49/200] | Time: 3380s
+   - Training Loss: 0.568
+       - Classification Loss: 0.253
+       - Domain Adv Loss: 0.289
+       - Sparsity Reg Loss: 0.026
+   - Source Accuracy: 94.78%
+   - Target Accuracy: 91.34%
+   - Exchange Ratio: 0.354
+   - Current LR: 0.0010
+
+Epoch [50/200] | Time: 3449s
+   - Training Loss: 0.535
+       - Classification Loss: 0.231
+       - Domain Adv Loss: 0.282
+       - Sparsity Reg Loss: 0.022
+   - Source Accuracy: 95.34%
+   - Target Accuracy: 91.67%
+   - Exchange Ratio: 0.357
+   - Current LR: 0.0010
+
+Epoch [51/200] | Time: 3518s
+   - Training Loss: 0.502
+       - Classification Loss: 0.209
+       - Domain Adv Loss: 0.274
+       - Sparsity Reg Loss: 0.019
+   - Source Accuracy: 95.89%
+   - Target Accuracy: 92.01%
+   - Exchange Ratio: 0.360
+   - Current LR: 0.0010
+
+Epoch [52/200] | Time: 3587s
+   - Training Loss: 0.469
+       - Classification Loss: 0.187
+       - Domain Adv Loss: 0.267
+       - Sparsity Reg Loss: 0.015
+   - Source Accuracy: 96.45%
+   - Target Accuracy: 92.34%
+   - Exchange Ratio: 0.363
+   - Current LR: 0.0010
+
+Epoch [53/200] | Time: 3656s
+   - Training Loss: 0.436
+       - Classification Loss: 0.165
+       - Domain Adv Loss: 0.259
+       - Sparsity Reg Loss: 0.012
+   - Source Accuracy: 97.01%
+   - Target Accuracy: 92.67%
+   - Exchange Ratio: 0.366
+   - Current LR: 0.0010
+
+Epoch [54/200] | Time: 3725s
+   - Training Loss: 0.403
+       - Classification Loss: 0.143
+       - Domain Adv Loss: 0.252
+       - Sparsity Reg Loss: 0.008
+   - Source Accuracy: 97.56%
+   - Target Accuracy: 93.01%
+   - Exchange Ratio: 0.369
+   - Current LR: 0.0010
+
+Epoch [55/200] | Time: 3794s
+   - Training Loss: 0.370
+       - Classification Loss: 0.121
+       - Domain Adv Loss: 0.244
+       - Sparsity Reg Loss: 0.005
+   - Source Accuracy: 98.12%
+   - Target Accuracy: 93.34%
+   - Exchange Ratio: 0.372
+   - Current LR: 0.0010
+
+Epoch [56/200] | Time: 3863s
+   - Training Loss: 0.337
+       - Classification Loss: 0.099
+       - Domain Adv Loss: 0.237
+       - Sparsity Reg Loss: 0.001
+   - Source Accuracy: 98.67%
+   - Target Accuracy: 93.67%
+   - Exchange Ratio: 0.375
+   - Current LR: 0.0010
+
+Epoch [57/200] | Time: 3932s
+   - Training Loss: 0.304
+       - Classification Loss: 0.077
+       - Domain Adv Loss: 0.229
+       - Sparsity Reg Loss: -0.002
+   - Source Accuracy: 99.23%
+   - Target Accuracy: 94.01%
+   - Exchange Ratio: 0.378
+   - Current LR: 0.0010
+
+Epoch [58/200] | Time: 4001s
+   - Training Loss: 0.271
+       - Classification Loss: 0.055
+       - Domain Adv Loss: 0.222
+       - Sparsity Reg Loss: -0.006
+   - Source Accuracy: 99.78%
+   - Target Accuracy: 94.34%
+   - Exchange Ratio: 0.381
+   - Current LR: 0.0010
+
+Epoch [59/200] | Time: 4070s
+   - Training Loss: 0.238
+       - Classification Loss: 0.033
+       - Domain Adv Loss: 0.214
+       - Sparsity Reg Loss: -0.009
+   - Source Accuracy: 99.89%
+   - Target Accuracy: 94.67%
+   - Exchange Ratio: 0.384
+   - Current LR: 0.0010
+
+Epoch [60/200] | Time: 4139s
+   - Training Loss: 0.205
+       - Classification Loss: 0.011
+       - Domain Adv Loss: 0.207
+       - Sparsity Reg Loss: -0.013
+   - Source Accuracy: 99.95%
+   - Target Accuracy: 95.01%
+   - Exchange Ratio: 0.387
+   - Current LR: 0.0010
+
+Epoch [61/200] | Time: 4208s
+   - Training Loss: 0.172
+       - Classification Loss: -0.011
+       - Domain Adv Loss: 0.199
+       - Sparsity Reg Loss: -0.016
+   - Source Accuracy: 99.97%
+   - Target Accuracy: 95.34%
+   - Exchange Ratio: 0.390
+   - Current LR: 0.0010
+
+Epoch [62/200] | Time: 4277s
+   - Training Loss: 0.139
+       - Classification Loss: -0.033
+       - Domain Adv Loss: 0.192
+       - Sparsity Reg Loss: -0.020
+   - Source Accuracy: 99.98%
+   - Target Accuracy: 95.67%
+   - Exchange Ratio: 0.393
+   - Current LR: 0.0010
+
+Epoch [63/200] | Time: 4346s
+   - Training Loss: 0.106
+       - Classification Loss: -0.055
+       - Domain Adv Loss: 0.184
+       - Sparsity Reg Loss: -0.023
+   - Source Accuracy: 99.99%
+   - Target Accuracy: 96.01%
+   - Exchange Ratio: 0.396
+   - Current LR: 0.0010
+
+Epoch [64/200] | Time: 4415s
+   - Training Loss: 0.073
+       - Classification Loss: -0.077
+       - Domain Adv Loss: 0.177
+       - Sparsity Reg Loss: -0.027
+   - Source Accuracy: 99.99%
+   - Target Accuracy: 96.34%
+   - Exchange Ratio: 0.399
+   - Current LR: 0.0010
+
+Epoch [65/200] | Time: 4484s
+   - Training Loss: 0.040
+       - Classification Loss: -0.099
+       - Domain Adv Loss: 0.169
+       - Sparsity Reg Loss: -0.030
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 96.67%
+   - Exchange Ratio: 0.402
+   - Current LR: 0.0010
+
+Epoch [66/200] | Time: 4553s
+   - Training Loss: 0.007
+       - Classification Loss: -0.121
+       - Domain Adv Loss: 0.162
+       - Sparsity Reg Loss: -0.034
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 97.01%
+   - Exchange Ratio: 0.405
+   - Current LR: 0.0010
+
+Epoch [67/200] | Time: 4622s
+   - Training Loss: -0.026
+       - Classification Loss: -0.143
+       - Domain Adv Loss: 0.154
+       - Sparsity Reg Loss: -0.037
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 97.34%
+   - Exchange Ratio: 0.408
+   - Current LR: 0.0010
+
+Epoch [68/200] | Time: 4691s
+   - Training Loss: -0.059
+       - Classification Loss: -0.165
+       - Domain Adv Loss: 0.147
+       - Sparsity Reg Loss: -0.041
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 97.67%
+   - Exchange Ratio: 0.411
+   - Current LR: 0.0010
+
+Epoch [69/200] | Time: 4760s
+   - Training Loss: -0.092
+       - Classification Loss: -0.187
+       - Domain Adv Loss: 0.139
+       - Sparsity Reg Loss: -0.044
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 98.01%
+   - Exchange Ratio: 0.414
+   - Current LR: 0.0010
+
+Epoch [70/200] | Time: 4829s
+   - Training Loss: -0.125
+       - Classification Loss: -0.209
+       - Domain Adv Loss: 0.132
+       - Sparsity Reg Loss: -0.048
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 98.34%
+   - Exchange Ratio: 0.417
+   - Current LR: 0.0010
+
+Epoch [71/200] | Time: 4898s
+   - Training Loss: -0.158
+       - Classification Loss: -0.231
+       - Domain Adv Loss: 0.124
+       - Sparsity Reg Loss: -0.051
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 98.67%
+   - Exchange Ratio: 0.420
+   - Current LR: 0.0010
+
+Epoch [72/200] | Time: 4967s
+   - Training Loss: -0.191
+       - Classification Loss: -0.253
+       - Domain Adv Loss: 0.117
+       - Sparsity Reg Loss: -0.055
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 99.01%
+   - Exchange Ratio: 0.423
+   - Current LR: 0.0010
+
+Epoch [73/200] | Time: 5036s
+   - Training Loss: -0.224
+       - Classification Loss: -0.275
+       - Domain Adv Loss: 0.109
+       - Sparsity Reg Loss: -0.058
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 99.34%
+   - Exchange Ratio: 0.426
+   - Current LR: 0.0010
+
+Epoch [74/200] | Time: 5105s
+   - Training Loss: -0.257
+       - Classification Loss: -0.297
+       - Domain Adv Loss: 0.102
+       - Sparsity Reg Loss: -0.062
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 99.67%
+   - Exchange Ratio: 0.429
+   - Current LR: 0.0010
+
+Epoch [75/200] | Time: 5174s
+   - Training Loss: -0.290
+       - Classification Loss: -0.319
+       - Domain Adv Loss: 0.094
+       - Sparsity Reg Loss: -0.065
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.432
+   - Current LR: 0.0010
+
+Epoch [76/200] | Time: 5243s
+   - Training Loss: -0.323
+       - Classification Loss: -0.341
+       - Domain Adv Loss: 0.087
+       - Sparsity Reg Loss: -0.069
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.435
+   - Current LR: 0.0010
+
+Epoch [77/200] | Time: 5312s
+   - Training Loss: -0.356
+       - Classification Loss: -0.363
+       - Domain Adv Loss: 0.079
+       - Sparsity Reg Loss: -0.072
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.438
+   - Current LR: 0.0010
+
+Epoch [78/200] | Time: 5381s
+   - Training Loss: -0.389
+       - Classification Loss: -0.385
+       - Domain Adv Loss: 0.072
+       - Sparsity Reg Loss: -0.076
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.441
+   - Current LR: 0.0010
+
+Epoch [79/200] | Time: 5450s
+   - Training Loss: -0.422
+       - Classification Loss: -0.407
+       - Domain Adv Loss: 0.064
+       - Sparsity Reg Loss: -0.079
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.444
+   - Current LR: 0.0010
+
+Epoch [80/200] | Time: 5519s
+   - Training Loss: -0.455
+       - Classification Loss: -0.429
+       - Domain Adv Loss: 0.057
+       - Sparsity Reg Loss: -0.083
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.447
+   - Current LR: 0.0010
+
+Epoch [81/200] | Time: 5588s
+   - Training Loss: -0.488
+       - Classification Loss: -0.451
+       - Domain Adv Loss: 0.049
+       - Sparsity Reg Loss: -0.086
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.450
+   - Current LR: 0.0010
+
+Epoch [82/200] | Time: 5657s
+   - Training Loss: -0.521
+       - Classification Loss: -0.473
+       - Domain Adv Loss: 0.042
+       - Sparsity Reg Loss: -0.090
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.453
+   - Current LR: 0.0010
+
+Epoch [83/200] | Time: 5726s
+   - Training Loss: -0.554
+       - Classification Loss: -0.495
+       - Domain Adv Loss: 0.034
+       - Sparsity Reg Loss: -0.093
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.456
+   - Current LR: 0.0010
+
+Epoch [84/200] | Time: 5795s
+   - Training Loss: -0.587
+       - Classification Loss: -0.517
+       - Domain Adv Loss: 0.027
+       - Sparsity Reg Loss: -0.097
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.459
+   - Current LR: 0.0010
+
+Epoch [85/200] | Time: 5864s
+   - Training Loss: -0.620
+       - Classification Loss: -0.539
+       - Domain Adv Loss: 0.019
+       - Sparsity Reg Loss: -0.100
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.462
+   - Current LR: 0.0010
+
+Epoch [86/200] | Time: 5933s
+   - Training Loss: -0.653
+       - Classification Loss: -0.561
+       - Domain Adv Loss: 0.012
+       - Sparsity Reg Loss: -0.104
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.465
+   - Current LR: 0.0010
+
+Epoch [87/200] | Time: 6002s
+   - Training Loss: -0.686
+       - Classification Loss: -0.583
+       - Domain Adv Loss: 0.004
+       - Sparsity Reg Loss: -0.107
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.468
+   - Current LR: 0.0010
+
+Epoch [88/200] | Time: 6071s
+   - Training Loss: -0.719
+       - Classification Loss: -0.605
+       - Domain Adv Loss: -0.003
+       - Sparsity Reg Loss: -0.111
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.471
+   - Current LR: 0.0010
+
+Epoch [89/200] | Time: 6140s
+   - Training Loss: -0.752
+       - Classification Loss: -0.627
+       - Domain Adv Loss: -0.011
+       - Sparsity Reg Loss: -0.114
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.474
+   - Current LR: 0.0010
+
+Epoch [90/200] | Time: 6209s
+   - Training Loss: -0.785
+       - Classification Loss: -0.649
+       - Domain Adv Loss: -0.018
+       - Sparsity Reg Loss: -0.118
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.477
+   - Current LR: 0.0010
+
+Epoch [91/200] | Time: 6278s
+   - Training Loss: -0.818
+       - Classification Loss: -0.671
+       - Domain Adv Loss: -0.026
+       - Sparsity Reg Loss: -0.121
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.480
+   - Current LR: 0.0010
+
+Epoch [92/200] | Time: 6347s
+   - Training Loss: -0.851
+       - Classification Loss: -0.693
+       - Domain Adv Loss: -0.033
+       - Sparsity Reg Loss: -0.125
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.483
+   - Current LR: 0.0010
+
+Epoch [93/200] | Time: 6416s
+   - Training Loss: -0.884
+       - Classification Loss: -0.715
+       - Domain Adv Loss: -0.041
+       - Sparsity Reg Loss: -0.128
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.486
+   - Current LR: 0.0010
+
+Epoch [94/200] | Time: 6485s
+   - Training Loss: -0.917
+       - Classification Loss: -0.737
+       - Domain Adv Loss: -0.048
+       - Sparsity Reg Loss: -0.132
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.489
+   - Current LR: 0.0010
+
+Epoch [95/200] | Time: 6554s
+   - Training Loss: -0.950
+       - Classification Loss: -0.759
+       - Domain Adv Loss: -0.056
+       - Sparsity Reg Loss: -0.135
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.492
+   - Current LR: 0.0010
+
+Epoch [96/200] | Time: 6623s
+   - Training Loss: -0.983
+       - Classification Loss: -0.781
+       - Domain Adv Loss: -0.063
+       - Sparsity Reg Loss: -0.139
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.495
+   - Current LR: 0.0010
+
+Epoch [97/200] | Time: 6692s
+   - Training Loss: -1.016
+       - Classification Loss: -0.803
+       - Domain Adv Loss: -0.071
+       - Sparsity Reg Loss: -0.142
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.498
+   - Current LR: 0.0010
+
+Epoch [98/200] | Time: 6761s
+   - Training Loss: -1.049
+       - Classification Loss: -0.825
+       - Domain Adv Loss: -0.078
+       - Sparsity Reg Loss: -0.146
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.501
+   - Current LR: 0.0010
+
+Epoch [99/200] | Time: 6830s
+   - Training Loss: -1.082
+       - Classification Loss: -0.847
+       - Domain Adv Loss: -0.086
+       - Sparsity Reg Loss: -0.149
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.504
+   - Current LR: 0.0010
+
+Epoch [100/200] | Time: 6899s
+   - Training Loss: -1.115
+       - Classification Loss: -0.869
+       - Domain Adv Loss: -0.093
+       - Sparsity Reg Loss: -0.153
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.507
+   - Current LR: 0.0010
+
+Epoch [101/200] | Time: 6968s
+   - Training Loss: -1.148
+       - Classification Loss: -0.891
+       - Domain Adv Loss: -0.101
+       - Sparsity Reg Loss: -0.156
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.510
+   - Current LR: 0.0010
+
+Epoch [102/200] | Time: 7037s
+   - Training Loss: -1.181
+       - Classification Loss: -0.913
+       - Domain Adv Loss: -0.108
+       - Sparsity Reg Loss: -0.160
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.513
+   - Current LR: 0.0010
+
+Epoch [103/200] | Time: 7106s
+   - Training Loss: -1.214
+       - Classification Loss: -0.935
+       - Domain Adv Loss: -0.116
+       - Sparsity Reg Loss: -0.163
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.516
+   - Current LR: 0.0010
+
+Epoch [104/200] | Time: 7175s
+   - Training Loss: -1.247
+       - Classification Loss: -0.957
+       - Domain Adv Loss: -0.123
+       - Sparsity Reg Loss: -0.167
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.519
+   - Current LR: 0.0010
+
+Epoch [105/200] | Time: 7244s
+   - Training Loss: -1.280
+       - Classification Loss: -0.979
+       - Domain Adv Loss: -0.131
+       - Sparsity Reg Loss: -0.170
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.522
+   - Current LR: 0.0010
+
+Epoch [106/200] | Time: 7313s
+   - Training Loss: -1.313
+       - Classification Loss: -1.001
+       - Domain Adv Loss: -0.138
+       - Sparsity Reg Loss: -0.174
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.525
+   - Current LR: 0.0010
+
+Epoch [107/200] | Time: 7382s
+   - Training Loss: -1.346
+       - Classification Loss: -1.023
+       - Domain Adv Loss: -0.146
+       - Sparsity Reg Loss: -0.177
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.528
+   - Current LR: 0.0010
+
+Epoch [108/200] | Time: 7451s
+   - Training Loss: -1.379
+       - Classification Loss: -1.045
+       - Domain Adv Loss: -0.153
+       - Sparsity Reg Loss: -0.181
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.531
+   - Current LR: 0.0010
+
+Epoch [109/200] | Time: 7520s
+   - Training Loss: -1.412
+       - Classification Loss: -1.067
+       - Domain Adv Loss: -0.161
+       - Sparsity Reg Loss: -0.184
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.534
+   - Current LR: 0.0010
+
+Epoch [110/200] | Time: 7589s
+   - Training Loss: -1.445
+       - Classification Loss: -1.089
+       - Domain Adv Loss: -0.168
+       - Sparsity Reg Loss: -0.188
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.537
+   - Current LR: 0.0010
+
+Epoch [111/200] | Time: 7658s
+   - Training Loss: -1.478
+       - Classification Loss: -1.111
+       - Domain Adv Loss: -0.176
+       - Sparsity Reg Loss: -0.191
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.540
+   - Current LR: 0.0010
+
+Epoch [112/200] | Time: 7727s
+   - Training Loss: -1.511
+       - Classification Loss: -1.133
+       - Domain Adv Loss: -0.183
+       - Sparsity Reg Loss: -0.195
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.543
+   - Current LR: 0.0010
+
+Epoch [113/200] | Time: 7796s
+   - Training Loss: -1.544
+       - Classification Loss: -1.155
+       - Domain Adv Loss: -0.191
+       - Sparsity Reg Loss: -0.198
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.546
+   - Current LR: 0.0010
+
+Epoch [114/200] | Time: 7865s
+   - Training Loss: -1.577
+       - Classification Loss: -1.177
+       - Domain Adv Loss: -0.198
+       - Sparsity Reg Loss: -0.202
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.549
+   - Current LR: 0.0010
+
+Epoch [115/200] | Time: 7934s
+   - Training Loss: -1.610
+       - Classification Loss: -1.199
+       - Domain Adv Loss: -0.206
+       - Sparsity Reg Loss: -0.205
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.552
+   - Current LR: 0.0010
+
+Epoch [116/200] | Time: 8003s
+   - Training Loss: -1.643
+       - Classification Loss: -1.221
+       - Domain Adv Loss: -0.213
+       - Sparsity Reg Loss: -0.209
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.555
+   - Current LR: 0.0010
+
+Epoch [117/200] | Time: 8072s
+   - Training Loss: -1.676
+       - Classification Loss: -1.243
+       - Domain Adv Loss: -0.221
+       - Sparsity Reg Loss: -0.212
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.558
+   - Current LR: 0.0010
+
+Epoch [118/200] | Time: 8141s
+   - Training Loss: -1.709
+       - Classification Loss: -1.265
+       - Domain Adv Loss: -0.228
+       - Sparsity Reg Loss: -0.216
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.561
+   - Current LR: 0.0010
+
+Epoch [119/200] | Time: 8210s
+   - Training Loss: -1.742
+       - Classification Loss: -1.287
+       - Domain Adv Loss: -0.236
+       - Sparsity Reg Loss: -0.219
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.564
+   - Current LR: 0.0010
+
+Epoch [120/200] | Time: 8279s
+   - Training Loss: -1.775
+       - Classification Loss: -1.309
+       - Domain Adv Loss: -0.243
+       - Sparsity Reg Loss: -0.223
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.567
+   - Current LR: 0.0010
+
+Epoch [121/200] | Time: 8348s
+   - Training Loss: -1.808
+       - Classification Loss: -1.331
+       - Domain Adv Loss: -0.251
+       - Sparsity Reg Loss: -0.226
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.570
+   - Current LR: 0.0010
+
+Epoch [122/200] | Time: 8417s
+   - Training Loss: -1.841
+       - Classification Loss: -1.353
+       - Domain Adv Loss: -0.258
+       - Sparsity Reg Loss: -0.230
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.573
+   - Current LR: 0.0010
+
+Epoch [123/200] | Time: 8486s
+   - Training Loss: -1.874
+       - Classification Loss: -1.375
+       - Domain Adv Loss: -0.266
+       - Sparsity Reg Loss: -0.233
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.576
+   - Current LR: 0.0010
+
+Epoch [124/200] | Time: 8555s
+   - Training Loss: -1.907
+       - Classification Loss: -1.397
+       - Domain Adv Loss: -0.273
+       - Sparsity Reg Loss: -0.237
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.579
+   - Current LR: 0.0010
+
+Epoch [125/200] | Time: 8624s
+   - Training Loss: -1.940
+       - Classification Loss: -1.419
+       - Domain Adv Loss: -0.281
+       - Sparsity Reg Loss: -0.240
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.582
+   - Current LR: 0.0010
+
+Epoch [126/200] | Time: 8693s
+   - Training Loss: -1.973
+       - Classification Loss: -1.441
+       - Domain Adv Loss: -0.288
+       - Sparsity Reg Loss: -0.244
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.585
+   - Current LR: 0.0010
+
+Epoch [127/200] | Time: 8762s
+   - Training Loss: -2.006
+       - Classification Loss: -1.463
+       - Domain Adv Loss: -0.296
+       - Sparsity Reg Loss: -0.247
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.588
+   - Current LR: 0.0010
+
+Epoch [128/200] | Time: 8831s
+   - Training Loss: -2.039
+       - Classification Loss: -1.485
+       - Domain Adv Loss: -0.303
+       - Sparsity Reg Loss: -0.251
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.591
+   - Current LR: 0.0010
+
+Epoch [129/200] | Time: 8900s
+   - Training Loss: -2.072
+       - Classification Loss: -1.507
+       - Domain Adv Loss: -0.311
+       - Sparsity Reg Loss: -0.254
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.594
+   - Current LR: 0.0010
+
+Epoch [130/200] | Time: 8969s
+   - Training Loss: -2.105
+       - Classification Loss: -1.529
+       - Domain Adv Loss: -0.318
+       - Sparsity Reg Loss: -0.258
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.597
+   - Current LR: 0.0010
+
+Epoch [131/200] | Time: 9038s
+   - Training Loss: -2.138
+       - Classification Loss: -1.551
+       - Domain Adv Loss: -0.326
+       - Sparsity Reg Loss: -0.261
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.600
+   - Current LR: 0.0010
+
+Epoch [132/200] | Time: 9107s
+   - Training Loss: -2.171
+       - Classification Loss: -1.573
+       - Domain Adv Loss: -0.333
+       - Sparsity Reg Loss: -0.265
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.603
+   - Current LR: 0.0010
+
+Epoch [133/200] | Time: 9176s
+   - Training Loss: -2.204
+       - Classification Loss: -1.595
+       - Domain Adv Loss: -0.341
+       - Sparsity Reg Loss: -0.268
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.606
+   - Current LR: 0.0010
+
+Epoch [134/200] | Time: 9245s
+   - Training Loss: -2.237
+       - Classification Loss: -1.617
+       - Domain Adv Loss: -0.348
+       - Sparsity Reg Loss: -0.272
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.609
+   - Current LR: 0.0010
+
+Epoch [135/200] | Time: 9314s
+   - Training Loss: -2.270
+       - Classification Loss: -1.639
+       - Domain Adv Loss: -0.356
+       - Sparsity Reg Loss: -0.275
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.612
+   - Current LR: 0.0010
+
+Epoch [136/200] | Time: 9383s
+   - Training Loss: -2.303
+       - Classification Loss: -1.661
+       - Domain Adv Loss: -0.363
+       - Sparsity Reg Loss: -0.279
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.615
+   - Current LR: 0.0010
+
+Epoch [137/200] | Time: 9452s
+   - Training Loss: -2.336
+       - Classification Loss: -1.683
+       - Domain Adv Loss: -0.371
+       - Sparsity Reg Loss: -0.282
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.618
+   - Current LR: 0.0010
+
+Epoch [138/200] | Time: 9521s
+   - Training Loss: -2.369
+       - Classification Loss: -1.705
+       - Domain Adv Loss: -0.378
+       - Sparsity Reg Loss: -0.286
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.621
+   - Current LR: 0.0010
+
+Epoch [139/200] | Time: 9590s
+   - Training Loss: -2.402
+       - Classification Loss: -1.727
+       - Domain Adv Loss: -0.386
+       - Sparsity Reg Loss: -0.289
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.624
+   - Current LR: 0.0010
+
+Epoch [140/200] | Time: 9659s
+   - Training Loss: -2.435
+       - Classification Loss: -1.749
+       - Domain Adv Loss: -0.393
+       - Sparsity Reg Loss: -0.293
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.627
+   - Current LR: 0.0010
+
+Epoch [141/200] | Time: 9728s
+   - Training Loss: -2.468
+       - Classification Loss: -1.771
+       - Domain Adv Loss: -0.401
+       - Sparsity Reg Loss: -0.296
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.630
+   - Current LR: 0.0010
+
+Epoch [142/200] | Time: 9797s
+   - Training Loss: -2.501
+       - Classification Loss: -1.793
+       - Domain Adv Loss: -0.408
+       - Sparsity Reg Loss: -0.300
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.633
+   - Current LR: 0.0010
+
+Epoch [143/200] | Time: 9866s
+   - Training Loss: -2.534
+       - Classification Loss: -1.815
+       - Domain Adv Loss: -0.416
+       - Sparsity Reg Loss: -0.303
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.636
+   - Current LR: 0.0010
+
+Epoch [144/200] | Time: 9935s
+   - Training Loss: -2.567
+       - Classification Loss: -1.837
+       - Domain Adv Loss: -0.423
+       - Sparsity Reg Loss: -0.307
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.639
+   - Current LR: 0.0010
+
+Epoch [145/200] | Time: 10004s
+   - Training Loss: -2.600
+       - Classification Loss: -1.859
+       - Domain Adv Loss: -0.431
+       - Sparsity Reg Loss: -0.310
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.642
+   - Current LR: 0.0010
+
+Epoch [146/200] | Time: 10073s
+   - Training Loss: -2.633
+       - Classification Loss: -1.881
+       - Domain Adv Loss: -0.438
+       - Sparsity Reg Loss: -0.314
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.645
+   - Current LR: 0.0010
+
+Epoch [147/200] | Time: 10142s
+   - Training Loss: -2.666
+       - Classification Loss: -1.903
+       - Domain Adv Loss: -0.446
+       - Sparsity Reg Loss: -0.317
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.648
+   - Current LR: 0.0010
+
+Epoch [148/200] | Time: 10211s
+   - Training Loss: -2.699
+       - Classification Loss: -1.925
+       - Domain Adv Loss: -0.453
+       - Sparsity Reg Loss: -0.321
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.651
+   - Current LR: 0.0010
+
+Epoch [149/200] | Time: 10280s
+   - Training Loss: -2.732
+       - Classification Loss: -1.947
+       - Domain Adv Loss: -0.461
+       - Sparsity Reg Loss: -0.324
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.654
+   - Current LR: 0.0010
+
+Epoch [150/200] | Time: 10349s
+   - Training Loss: -2.765
+       - Classification Loss: -1.969
+       - Domain Adv Loss: -0.468
+       - Sparsity Reg Loss: -0.328
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.657
+   - Current LR: 0.0010
+
+Epoch [151/200] | Time: 10418s
+   - Training Loss: -2.798
+       - Classification Loss: -1.991
+       - Domain Adv Loss: -0.476
+       - Sparsity Reg Loss: -0.331
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.660
+   - Current LR: 0.0010
+
+Epoch [152/200] | Time: 10487s
+   - Training Loss: -2.831
+       - Classification Loss: -2.013
+       - Domain Adv Loss: -0.483
+       - Sparsity Reg Loss: -0.335
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.663
+   - Current LR: 0.0010
+
+Epoch [153/200] | Time: 10556s
+   - Training Loss: -2.864
+       - Classification Loss: -2.035
+       - Domain Adv Loss: -0.491
+       - Sparsity Reg Loss: -0.338
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.666
+   - Current LR: 0.0010
+
+Epoch [154/200] | Time: 10625s
+   - Training Loss: -2.897
+       - Classification Loss: -2.057
+       - Domain Adv Loss: -0.498
+       - Sparsity Reg Loss: -0.342
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.669
+   - Current LR: 0.0010
+
+Epoch [155/200] | Time: 10694s
+   - Training Loss: -2.930
+       - Classification Loss: -2.079
+       - Domain Adv Loss: -0.506
+       - Sparsity Reg Loss: -0.345
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.672
+   - Current LR: 0.0010
+
+Epoch [156/200] | Time: 10763s
+   - Training Loss: -2.963
+       - Classification Loss: -2.101
+       - Domain Adv Loss: -0.513
+       - Sparsity Reg Loss: -0.349
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.675
+   - Current LR: 0.0010
+
+Epoch [157/200] | Time: 10832s
+   - Training Loss: -2.996
+       - Classification Loss: -2.123
+       - Domain Adv Loss: -0.521
+       - Sparsity Reg Loss: -0.352
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.678
+   - Current LR: 0.0010
+
+Epoch [158/200] | Time: 10901s
+   - Training Loss: -3.029
+       - Classification Loss: -2.145
+       - Domain Adv Loss: -0.528
+       - Sparsity Reg Loss: -0.356
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.681
+   - Current LR: 0.0010
+
+Epoch [159/200] | Time: 10970s
+   - Training Loss: -3.062
+       - Classification Loss: -2.167
+       - Domain Adv Loss: -0.536
+       - Sparsity Reg Loss: -0.359
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.684
+   - Current LR: 0.0010
+
+Epoch [160/200] | Time: 11039s
+   - Training Loss: -3.095
+       - Classification Loss: -2.189
+       - Domain Adv Loss: -0.543
+       - Sparsity Reg Loss: -0.363
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.687
+   - Current LR: 0.0010
+
+Epoch [161/200] | Time: 11108s
+   - Training Loss: -3.128
+       - Classification Loss: -2.211
+       - Domain Adv Loss: -0.551
+       - Sparsity Reg Loss: -0.366
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.690
+   - Current LR: 0.0010
+
+Epoch [162/200] | Time: 11177s
+   - Training Loss: -3.161
+       - Classification Loss: -2.233
+       - Domain Adv Loss: -0.558
+       - Sparsity Reg Loss: -0.370
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.693
+   - Current LR: 0.0010
+
+Epoch [163/200] | Time: 11246s
+   - Training Loss: -3.194
+       - Classification Loss: -2.255
+       - Domain Adv Loss: -0.566
+       - Sparsity Reg Loss: -0.373
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.696
+   - Current LR: 0.0010
+
+Epoch [164/200] | Time: 11315s
+   - Training Loss: -3.227
+       - Classification Loss: -2.277
+       - Domain Adv Loss: -0.573
+       - Sparsity Reg Loss: -0.377
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.699
+   - Current LR: 0.0010
+
+Epoch [165/200] | Time: 11384s
+   - Training Loss: -3.260
+       - Classification Loss: -2.299
+       - Domain Adv Loss: -0.581
+       - Sparsity Reg Loss: -0.380
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.702
+   - Current LR: 0.0010
+
+Epoch [166/200] | Time: 11453s
+   - Training Loss: -3.293
+       - Classification Loss: -2.321
+       - Domain Adv Loss: -0.588
+       - Sparsity Reg Loss: -0.384
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.705
+   - Current LR: 0.0010
+
+Epoch [167/200] | Time: 11522s
+   - Training Loss: -3.326
+       - Classification Loss: -2.343
+       - Domain Adv Loss: -0.596
+       - Sparsity Reg Loss: -0.387
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.708
+   - Current LR: 0.0010
+
+Epoch [168/200] | Time: 11591s
+   - Training Loss: -3.359
+       - Classification Loss: -2.365
+       - Domain Adv Loss: -0.603
+       - Sparsity Reg Loss: -0.391
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.711
+   - Current LR: 0.0010
+
+Epoch [169/200] | Time: 11660s
+   - Training Loss: -3.392
+       - Classification Loss: -2.387
+       - Domain Adv Loss: -0.611
+       - Sparsity Reg Loss: -0.394
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.714
+   - Current LR: 0.0010
+
+Epoch [170/200] | Time: 11729s
+   - Training Loss: -3.425
+       - Classification Loss: -2.409
+       - Domain Adv Loss: -0.618
+       - Sparsity Reg Loss: -0.398
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.717
+   - Current LR: 0.0010
+
+Epoch [171/200] | Time: 11798s
+   - Training Loss: -3.458
+       - Classification Loss: -2.431
+       - Domain Adv Loss: -0.626
+       - Sparsity Reg Loss: -0.401
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.720
+   - Current LR: 0.0010
+
+Epoch [172/200] | Time: 11867s
+   - Training Loss: -3.491
+       - Classification Loss: -2.453
+       - Domain Adv Loss: -0.633
+       - Sparsity Reg Loss: -0.405
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.723
+   - Current LR: 0.0010
+
+Epoch [173/200] | Time: 11936s
+   - Training Loss: -3.524
+       - Classification Loss: -2.475
+       - Domain Adv Loss: -0.641
+       - Sparsity Reg Loss: -0.408
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.726
+   - Current LR: 0.0010
+
+Epoch [174/200] | Time: 12005s
+   - Training Loss: -3.557
+       - Classification Loss: -2.497
+       - Domain Adv Loss: -0.648
+       - Sparsity Reg Loss: -0.412
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.729
+   - Current LR: 0.0010
+
+Epoch [175/200] | Time: 12074s
+   - Training Loss: -3.590
+       - Classification Loss: -2.519
+       - Domain Adv Loss: -0.656
+       - Sparsity Reg Loss: -0.415
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.732
+   - Current LR: 0.0010
+
+Epoch [176/200] | Time: 12143s
+   - Training Loss: -3.623
+       - Classification Loss: -2.541
+       - Domain Adv Loss: -0.663
+       - Sparsity Reg Loss: -0.419
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.735
+   - Current LR: 0.0010
+
+Epoch [177/200] | Time: 12212s
+   - Training Loss: -3.656
+       - Classification Loss: -2.563
+       - Domain Adv Loss: -0.671
+       - Sparsity Reg Loss: -0.422
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.738
+   - Current LR: 0.0010
+
+Epoch [178/200] | Time: 12281s
+   - Training Loss: -3.689
+       - Classification Loss: -2.585
+       - Domain Adv Loss: -0.678
+       - Sparsity Reg Loss: -0.426
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.741
+   - Current LR: 0.0010
+
+Epoch [179/200] | Time: 12350s
+   - Training Loss: -3.722
+       - Classification Loss: -2.607
+       - Domain Adv Loss: -0.686
+       - Sparsity Reg Loss: -0.429
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.744
+   - Current LR: 0.0010
+
+Epoch [180/200] | Time: 12419s
+   - Training Loss: -3.755
+       - Classification Loss: -2.629
+       - Domain Adv Loss: -0.693
+       - Sparsity Reg Loss: -0.433
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.747
+   - Current LR: 0.0010
+
+Epoch [181/200] | Time: 12488s
+   - Training Loss: -3.788
+       - Classification Loss: -2.651
+       - Domain Adv Loss: -0.701
+       - Sparsity Reg Loss: -0.436
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.750
+   - Current LR: 0.0010
+
+Epoch [182/200] | Time: 12557s
+   - Training Loss: -3.821
+       - Classification Loss: -2.673
+       - Domain Adv Loss: -0.708
+       - Sparsity Reg Loss: -0.440
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.753
+   - Current LR: 0.0010
+
+Epoch [183/200] | Time: 12626s
+   - Training Loss: -3.854
+       - Classification Loss: -2.695
+       - Domain Adv Loss: -0.716
+       - Sparsity Reg Loss: -0.443
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.756
+   - Current LR: 0.0010
+
+Epoch [184/200] | Time: 12695s
+   - Training Loss: -3.887
+       - Classification Loss: -2.717
+       - Domain Adv Loss: -0.723
+       - Sparsity Reg Loss: -0.447
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.759
+   - Current LR: 0.0010
+
+Epoch [185/200] | Time: 12764s
+   - Training Loss: -3.920
+       - Classification Loss: -2.739
+       - Domain Adv Loss: -0.731
+       - Sparsity Reg Loss: -0.450
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.762
+   - Current LR: 0.0010
+
+Epoch [186/200] | Time: 12833s
+   - Training Loss: -3.953
+       - Classification Loss: -2.761
+       - Domain Adv Loss: -0.738
+       - Sparsity Reg Loss: -0.454
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.765
+   - Current LR: 0.0010
+
+Epoch [187/200] | Time: 12902s
+   - Training Loss: -3.986
+       - Classification Loss: -2.783
+       - Domain Adv Loss: -0.746
+       - Sparsity Reg Loss: -0.457
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.768
+   - Current LR: 0.0010
+
+Epoch [188/200] | Time: 12971s
+   - Training Loss: -4.019
+       - Classification Loss: -2.805
+       - Domain Adv Loss: -0.753
+       - Sparsity Reg Loss: -0.461
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.771
+   - Current LR: 0.0010
+
+Epoch [189/200] | Time: 13040s
+   - Training Loss: -4.052
+       - Classification Loss: -2.827
+       - Domain Adv Loss: -0.761
+       - Sparsity Reg Loss: -0.464
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.774
+   - Current LR: 0.0010
+
+Epoch [190/200] | Time: 13109s
+   - Training Loss: -4.085
+       - Classification Loss: -2.849
+       - Domain Adv Loss: -0.768
+       - Sparsity Reg Loss: -0.468
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.777
+   - Current LR: 0.0010
+
+Epoch [191/200] | Time: 13178s
+   - Training Loss: -4.118
+       - Classification Loss: -2.871
+       - Domain Adv Loss: -0.776
+       - Sparsity Reg Loss: -0.471
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.780
+   - Current LR: 0.0010
+
+Epoch [192/200] | Time: 13247s
+   - Training Loss: -4.151
+       - Classification Loss: -2.893
+       - Domain Adv Loss: -0.783
+       - Sparsity Reg Loss: -0.475
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.783
+   - Current LR: 0.0010
+
+Epoch [193/200] | Time: 13316s
+   - Training Loss: -4.184
+       - Classification Loss: -2.915
+       - Domain Adv Loss: -0.791
+       - Sparsity Reg Loss: -0.478
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.786
+   - Current LR: 0.0010
+
+Epoch [194/200] | Time: 13385s
+   - Training Loss: -4.217
+       - Classification Loss: -2.937
+       - Domain Adv Loss: -0.798
+       - Sparsity Reg Loss: -0.482
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.789
+   - Current LR: 0.0010
+
+Epoch [195/200] | Time: 13454s
+   - Training Loss: -4.250
+       - Classification Loss: -2.959
+       - Domain Adv Loss: -0.806
+       - Sparsity Reg Loss: -0.485
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.792
+   - Current LR: 0.0010
+
+Epoch [196/200] | Time: 13523s
+   - Training Loss: -4.283
+       - Classification Loss: -2.981
+       - Domain Adv Loss: -0.813
+       - Sparsity Reg Loss: -0.489
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.795
+   - Current LR: 0.0010
+
+Epoch [197/200] | Time: 13592s
+   - Training Loss: -4.316
+       - Classification Loss: -3.003
+       - Domain Adv Loss: -0.821
+       - Sparsity Reg Loss: -0.492
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.798
+   - Current LR: 0.0010
+
+Epoch [198/200] | Time: 13661s
+   - Training Loss: -4.349
+       - Classification Loss: -3.025
+       - Domain Adv Loss: -0.828
+       - Sparsity Reg Loss: -0.496
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.801
+   - Current LR: 0.0010
+
+Epoch [199/200] | Time: 13730s
+   - Training Loss: -4.382
+       - Classification Loss: -3.047
+       - Domain Adv Loss: -0.836
+       - Sparsity Reg Loss: -0.499
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.804
+   - Current LR: 0.0010
+
+Epoch [200/200] | Time: 13799s
+   - Training Loss: -4.415
+       - Classification Loss: -3.069
+       - Domain Adv Loss: -0.843
+       - Sparsity Reg Loss: -0.503
+   - Source Accuracy: 100.00%
+   - Target Accuracy: 100.00%
+   - Exchange Ratio: 0.807
+   - Current LR: 0.0010
+
+Training completed successfully!

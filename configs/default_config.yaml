@@ -1,0 +1,80 @@
+# Default configuration for CFSAM-InterBN training
+
+# Dataset configuration
+dataset:
+  name: 'office31'  # ['office31', 'imageclef', 'officehome', 'visda2017', 'domainnet']
+  source_domain: 'amazon'
+  target_domain: 'webcam'
+  batch_size: 32
+  num_workers: 4
+  image_size: 224
+
+# Model configuration
+model:
+  backbone: 'resnet50'  # Use resnet101 for VisDA-2017 and DomainNet
+  pretrained: true
+  feature_dim: 2048
+  discriminator_hidden_dim: 1024
+  num_classes: {
+    'office31': 31,
+    'imageclef': 12,
+    'officehome': 65,
+    'visda2017': 12,
+    'domainnet': 345
+  }
+
+# InterBN configuration
+interbn:
+  threshold: 0.5
+  momentum: 0.1
+  eps: 1e-5
+
+# Training configuration
+training:
+  num_epochs: 200
+  learning_rate: 1e-3
+  weight_decay: 1e-3
+  
+  # SAM optimizer
+  sam_rho: 0.05
+  
+  # Learning rate scheduler
+  scheduler:
+    type: 'cosine'
+    T_0: 10
+    T_mult: 1
+  
+  # EMA
+  use_ema: true
+  ema_decay: 0.9998
+  
+  # Loss weights
+  lambda_sparse: 1e-2  # Weight for sparsity regularization
+  alpha_adv: 1.0      # Weight for adversarial loss
+
+# Mixed precision training
+amp:
+  enabled: true
+  opt_level: 'O1'
+
+# Logging configuration
+logging:
+  log_interval: 10  # Log every N epochs
+  tensorboard: true
+  wandb:
+    enabled: false
+    project: 'CFSAM-InterBN'
+    entity: 'your-username'
+  
+  # Checkpoint saving
+  save_freq: 1
+  keep_last_n: 5
+
+# Paths
+paths:
+  data_root: 'data'
+  checkpoints: 'checkpoints'
+  logs: 'training_history'
+
+# Random seed for reproducibility
+seed: 2024
