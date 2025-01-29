@@ -1,4 +1,3 @@
-<!-- # CFSAM-InterBN: Cross-Domain Feature Learning with SAM and InterBN -->
 # Sharpness-Aware Minimization for Adversarial Domain Adaptation
 
 A PyTorch implementation of domain adaptation combining SAM (Sharpness-Aware Minimization) optimization and InterBN (Interchangeable Batch Normalization) for robust cross-domain feature learning.
